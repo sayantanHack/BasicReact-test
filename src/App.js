@@ -20,7 +20,7 @@ function App() {
       <h1>
         Resturant Review App
       </h1>
-      <mapWrapElement googlemapurl={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&KEY="AIzaSyBo107zHkcIgXHMOTCPw-iONo4I7Ibq0ZI"`
+      <mapWrapElement googlemapurl={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&KEY="MY-GOOGLEMAP-API-KEY"`
       }
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `100%` }} />}
