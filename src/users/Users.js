@@ -21,6 +21,7 @@ class Users extends Component{
                 tempUser.age -= 2;
                 return tempUser;
             }
+            return 0;
         });
         //to change anything in React Virtual DOM setState() is the method 
         this.setState({newState});
@@ -36,9 +37,17 @@ class Users extends Component{
             <p>
                 Bellow the name and ages are taken from state users data.
             </p>
+          {/* The hard coded for each users
         <User age={this.state.users[0].age}>{this.state.users[0].name}</User>
         <User age={this.state.users[1].age}>{this.state.users[1].name}</User>
         <User age={this.state.users[2].age}>{this.state.users[2].name}</User>
+        */}
+
+        {
+        this.state.users.map((user)=>{
+            return <User age={user.age}>{user.name}</User>
+        })
+        }
         <p>
             Click the bellow button to young 2 years.
         </p>
